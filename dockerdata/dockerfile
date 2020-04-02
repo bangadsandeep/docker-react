@@ -1,0 +1,10 @@
+#Use an existing image as Base
+From alpine
+
+
+#Download nad install dependecy 
+RUN Apk add --update redis
+
+
+#Tell the image what to do when it starts as container 
+CMD ["dockerdata"]
